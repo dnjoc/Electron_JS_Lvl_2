@@ -1,0 +1,3 @@
+Esta aplicacion es el inicio de entender como trabajar con aplicaciones de escritorio.
+
+Instale bajo su propio riezgo, no nos hacemos responsables por daños ocacionados.

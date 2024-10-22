@@ -1,0 +1,37 @@
+{
+  "name": "first-app-electron",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "Desafio 4 Electron",
+    "extraResources": [
+      "usuarios.json",
+      "logo.ico"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "logo.png"
+    },
+    "nsis": {
+      "oneClick": false,
+      "installerIcon": "logo.ico",
+      "license": "license.txt",
+      "createDesktopShortcut": true
+    }
+  },
+  "keywords": [],
+  "author": "Daniel Castellanos",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    
+  },
+  "devDependencies": {
+    "electron": "^33.0.1",
+    "electron-builder": "^25.1.8"
+  }
+}

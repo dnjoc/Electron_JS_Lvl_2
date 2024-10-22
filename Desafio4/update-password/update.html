@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Password</title>
+    <link rel="stylesheet" href="./update-style.css">
+</head>
+
+<body>
+    <main>
+        <h1>Cambie su contraseña</h1>
+        <form action="submit" id="loginForm">
+            <div>
+                <!-- input para la contraseña actual -->
+                <label for="current">Contraseña actual: </label>
+                <input type="password" id="current" name="current" required>
+            </div>
+            <div>
+                <!-- input para la contraseña nueva -->
+                <label for="newPass">Nueva contraseña: </label>
+                <input type="password" id="newPass" name="newPass" required>
+            </div>
+            <div>
+                <!-- input para repetir la contraseña nueva -->
+                <label for="repNewPass">Confirmar la nueva contraseña: </label>
+                <input type="password" id="repNewPass" name="repNewPass" required>
+            </div>
+            <!-- boton para el envio de los datos de los inputs -->
+            <button type="submit" id="cambiarPassword">Cambiar contraseña</button>
+        </form>
+        <!-- span para mostrar al usuario que el user o password no existe -->
+        <span style="display: none; " id="error" class="mensajeError"></span>
+        <span style="display: none; " id="mensaje" class="mensajeExitoso"></span>
+    </main>
+    <script src="./update.js"></script>
+</body>
+
+</html>
