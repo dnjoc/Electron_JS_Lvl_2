@@ -1,0 +1,11 @@
+En base al código del desafío anterior, realizar las siguientes actividades:
+
+1.- Agregar a la aplicación un Tray con un icono personalizado. Asociarle un menú contextual con la opción "Salir" y la opción "Ayuda"
+
+2.- Programar las opciones del menú de la siguiente forma: la opción "Salir" debe cerrar la aplicación y la opción ayuda, debe abrir un sitio web en el navegador. Cuando el usuario inicia sesión, debe cambiarse el menú contextual del Tray por otro que tenga las opciones: "Salir", "Cerrar sesión" y "Cambiar clave". La opción "Cerrar sesión", debe cerrar la sesión y mostrar la ventana de inicio de sesión, además de volver a mostrar el menú contextual que tenía inicialmente el Tray, es decir, debe tener 2 menus, y debe cambiar el menu del Tray en tiempo de ejecución
+
+3.- Cuando el usuario inicia sesión, debe aparecer una notificación que muestre el nombre del usuario que esta iniciando sesión, la fecha, la hora en que inicio sesión y el icono usado en el Tray. Cuando el usuario cierre sesión, debe aparecer una notificación indicándole cuanto tiempo estuvo en la aplicación (usar la clase Date llevando a milisegundos el momento de inicio de sesión y restarlo al momento en que cierra la sesión)
+
+4.- Programar la opción "Cambiar clave", para que muestre una ventana con los inputs para escribir la contraseña anterior, la nueva contraseña y una confirmación de la nueva contraseña. Verificar que la contraseña anterior coincida con la contraseña con la que el usuario inició sesión, que la nueva contraseña no este vacía y sea igual a la confirmación de la contraseña
+
+5.- Crear el instalador de la aplicación usando electron-builder. Hacer capturas de pantalla de la ventana de comandos luego de ejecutar el comando para crear el instalador. Luego hacer capturas de pantalla del instalador ejecutándose y de la aplicación instalada en su computadora
