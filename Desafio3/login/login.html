@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+        <h1>Inicie sesion a continuacion...</h1>
+        <form action="submit" id="loginForm">
+            <div>
+                <!-- input para el nombre de usuario -->
+                <label for="username">Username: </label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div>
+                <!-- input para la contraseña -->
+                <label for="password">Password: </label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <!-- se agrega un enlace para dirigisre a la pagina de registro de usuario -->
+             <div class="registro" >
+                <h6>Aun no estas registrado?</h6>
+                <a href="#" id="register" >Registrate aqui</a>
+             </div>
+            <!-- boton para el envio de los datos de los inputs -->
+            <button type="submit" id="iniciarSesion">Iniciar sesion</button>
+        </form>
+        <!-- span para mostrar al usuario que el user o password no existe -->
+        <span style="display: none; " id="errorUser"></span>
+    </main>
+    <script src="./login.js"></script>
+</body>
+
+</html>

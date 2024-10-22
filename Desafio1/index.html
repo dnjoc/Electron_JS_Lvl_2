@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio1</title>
+  </head>
+  <body>
+    <input type="text" disabled id="ruta" size="60" />
+    <button id="copiar">Copiar ruta</button>
+    <p id="mensaje"></p>
+    <script>
+      //Funcion para enviar la ruta copiada
+      copiar.onclick = () => {
+        api.copyToClipboard(document.getElementById("ruta").value);
+      };
+    </script>
+  </body>
+</html>

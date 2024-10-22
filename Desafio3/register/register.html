@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <h1>Ingrese los datos solicitados para el registro</h1>
+            <form action="submit" id="registerForm">
+                <div>
+                    <!-- input para el nombre del usuario -->
+                    <label for="name">Name: </label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <!-- input para el nombre de usuario -->
+                    <label for="username">Username: </label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div>
+                    <!-- input para la contraseña -->
+                    <label for="password">Password: </label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <!-- se agrega un enlace para dirigisre a la pagina de registro de usuario -->
+                <div class="iniciar-sesion">
+                    <h6>Ya estas registrado?</h6>
+                    <a href="#" id="iniciarSesion">Iniciar Sesion</a>
+                </div>
+                <!-- boton para el envio de los datos de los inputs -->
+                <button type="submit" id="registrarse">Registrarse</button>
+            </form>
+            <!-- span para mostrar al usuario que ya se encuentra registrado -->
+            <span style="display: none; " id="errorUser"></span>
+            <!-- muestra el mensaje de registro satisfactorio al usuario -->
+            <span style="display: none; " id="mensaje" class="mensajeRegister"></span>
+        </div>
+    </main>
+    <script src="./register.js"></script>
+</body>
+
+</html>
