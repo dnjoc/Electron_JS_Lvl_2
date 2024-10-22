@@ -1,0 +1,11 @@
+Crear un proyecto nuevo Electron donde se utilicen las APIS: webContents, preload y contextBridge, implementando el código necesario para cumplir con los siguientes requerimientos:
+
+1.- Instanciar una ventana con la integración de Node inhabilitada para el proceso renderer. Cargar en esta ventana la URL de su preferencia. Agregarle a la ventana un menú con las opciones: "Mostrar impresora por defecto" e "Imprimir". Programar en el archivo index.js el evento click de la opción de menú "Imprimir", para que al hacer click sobre este, se ejecute una impresión silenciosa del contenido de la ventana actual, con la hoja en orientación horizontal y 3 copias
+
+2.- Programar en el archivo index.js la opción de menú "Mostrar Impresora por defecto", para que al hacer click sobre este, se muestre una ventana de dialogo con el nombre de la impresora por defecto (si es que hay impresoras instaladas en el sistema). Debe usar "dialog" y el webContent en el main process
+
+3.- Crear un archivo HTML que tenga un input type text de solo lectura. Instanciar una ventana con la integración de Node inhabilitada para el proceso renderer y con un archivo preload asociado a esta. Cargar a la ventana el archivo HTML creado
+
+4.- Programar en el preload que en el input del HTML se muestre la ruta en la que esta ejecutándose la aplicación
+
+5.- Agregar al HTML un botón que le permita al usuario copiar en el contenido del input HTML. Para ello, debe hacer accesible desde el preload el API clipboard (usando el API contextBridge). En el JS del HTML programar una función que se ejecute al hacer click en el botón. La función debe usar el clipboard para copiar en el porta papeles el contenido del input y luego muestre un mensaje (en el HTML) al usuario informando que la ruta fue copiada
