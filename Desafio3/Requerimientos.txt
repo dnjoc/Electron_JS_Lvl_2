@@ -1,0 +1,11 @@
+En base al desafío anterior, debe cumplir con los siguientes requerimientos: (NOTA: debe utilizar archivos PRELOAD en cada ventana. No debe programar nada en los archivos HTML)
+
+1.- Crear un archivo JSON con el nombre "usuarios.json", donde se almacenara el arreglo de objetos de usuarios que pueden iniciar sesión en la aplicación, por lo tanto, ya no debe inicializar un arreglo en el main.js
+
+2.- Al momento de que un usuario intenta iniciar sesión, para hacer la búsqueda del usuario, se debe leer el contenido del archivo "usuarios.json" cada vez que un usuario intente iniciar sesión, para así asegurarse de que esta buscando en la última versión del archivo
+
+3.- Crear una nueva ventana donde se muestre un formulario para solicitar los datos del usuario. Desde la ventana de inicio de sesión se debe mostrar esta nueva ventana de registro y desde esta ventana de registro se debe mostrar la ventana inicio de sesión. Nunca deben estar visibles ambas ventanas a la vez
+
+4.- Cuando el usuario escriba los datos de registro, esos datos deben enviarse al main para guardarse en el archivo "usuarios.json"
+
+5.- Cuando el usuario inicia sesión exitosamente, debe mostrarse en algún lugar de la ventana principal el nombre completo del usuario que se autenticó. Para ello, debe enviarse un mensaje desde el main process al redenderer process de la ventana principal
