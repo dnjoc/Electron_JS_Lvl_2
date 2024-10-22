@@ -1,0 +1,11 @@
+Ha sido contratado para crear una aplicación de escritorio con una ventana de inicio de sesión y una ventana principal. En la ventana principal el usuario puede cerrar sesión. Para la aplicación, debe crear un documento HTML que contenga 2 inputs: uno para escribir el nombre usuario, otro para escribir la clave y un botón para iniciar sesión. Debe crear el main básico de una aplicación Electron, donde debe estar definido e inicializado un arreglo de objetos de usuarios que pueden iniciar sesión en la aplicación, con sus respectivos nombres de usuario, clave y nombre completo. Al ejecutarse la aplicación se debe mostrar la ventana de inicio de sesión, para luego implementar los siguientes requerimientos:
+
+1.- Programar que cuando el usuario haga clic en el botón iniciar sesión, se envíe un mensaje al main process con los datos de usuario y clave que esta intentando iniciar sesión (los datos de los inputs)
+
+2.- Programar en el main process el manejador de evento al recibir el mensaje que envía el render process al intentar iniciar sesión. Recibir los datos enviados por el renderer process. Luego recorrer el arreglo de usuarios para buscar éstos 2 datos. La programación de la búsqueda debe hacerse en el código del main process
+
+3.- Si al terminar la búsqueda, el nombre de usuario y clave NO existen en el arreglo, debe retornar al render process el valor 0, para que éste muestre en el HTML un mensaje que le indique al usuario final que no existe el usuario y clave que escribió en los inputs
+
+4.- Si el nombre de usuario y clave existen, debe retornar al render process el valor 1. Luego, debe esconder la ventana de inicio de sesión y se debe mostrar la ventana principal
+
+5.- Programar en el HTML que se muestra en la ventana principal, que al hacer click en un hipervínculo con el texto "Cerrar Sesión" se envíe al main process un mensaje. Al recibir el mensaje, el main process debe esconder la ventana principal y mostrar nuevamente la ventana de inicio de sesión con los inputs vacíos
